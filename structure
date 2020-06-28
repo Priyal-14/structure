@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  clrscr();
+  struct student
+  {
+	char name[20];
+	int age;
+       long int phone;
+	int salary;
+  }  obj[3];
+  int i;
+
+  for(i=0;i<=2;i++)
+  {
+      printf("enter employee name\n");
+      scanf("%s",&obj[i].name);
+      printf("input age\n");
+      scanf("%d",&obj[i].age);
+      printf("input phone number\n");
+      scanf("%ld",&obj[i].phone);
+      printf("input salary\n");
+      scanf("%d",&obj[i].salary);
+  }
+  printf("Name\tAge\tPhone no\tSalary\n");
+  for(i=0;i<=2;i++)
+  {
+  printf("%s\t",obj[i].name);
+  printf("%d\t",obj[i].age);
+  printf("%ld\t",obj[i].phone);
+  printf("%d\n",obj[i].salary);
+  }
+  getch();
+  }
