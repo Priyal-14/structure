@@ -9,10 +9,10 @@ void main()
 	int age;
        long int phone;
 	int salary;
-  }  obj[3];
+  }  obj[20];
   int i;
 
-  for(i=0;i<=2;i++)
+  for(i=0;i<=19;i++)
   {
       printf("enter employee name\n");
       scanf("%s",&obj[i].name);
@@ -24,7 +24,7 @@ void main()
       scanf("%d",&obj[i].salary);
   }
   printf("Name\tAge\tPhone no\tSalary\n");
-  for(i=0;i<=2;i++)
+  for(i=0;i<=19;i++)
   {
   printf("%s\t",obj[i].name);
   printf("%d\t",obj[i].age);
